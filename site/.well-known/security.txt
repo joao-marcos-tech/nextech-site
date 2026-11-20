@@ -1,0 +1,5 @@
+# Achou uma falha de segurança neste site? Por favor, avise por e-mail.
+Contact: mailto:nextechwebstudio@gmail.com
+Expires: 2027-11-20T00:00:00.000Z
+Preferred-Languages: pt, en
+Canonical: https://nextechwebstudio.netlify.app/.well-known/security.txt

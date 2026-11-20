@@ -23,21 +23,27 @@ Site institucional da **NEXTECH**, minha marca de desenvolvimento web. Apresenta
 - HTML5 semântico
 - CSS3: variáveis (custom properties), Grid, Flexbox, `clamp()` para tipografia fluida e media queries
 - JavaScript puro, sem frameworks nem bibliotecas
-- Google Fonts: Space Grotesk e JetBrains Mono
+- Fontes Space Grotesk e JetBrains Mono hospedadas no próprio site (licença OFL)
+- Headers de segurança (CSP e afins) no arquivo `site/_headers`
 - Deploy na Netlify
 
 ## Estrutura
 
 ```
-├── index.html   # estrutura e conteúdo das seções
-├── index.css    # estilos, tema e responsividade
-├── index.js     # menu mobile
-└── docs/        # imagens deste README
+├── site/                 # tudo o que vai para o ar (publish da Netlify)
+│   ├── index.html        # estrutura e conteúdo das seções
+│   ├── index.css         # estilos, tema e responsividade
+│   ├── index.js          # menu mobile
+│   ├── fonts/            # fontes .woff2 e licenças
+│   ├── _headers          # headers de segurança da Netlify
+│   └── .well-known/security.txt
+├── netlify.toml          # diz à Netlify para publicar só a pasta site/
+└── docs/                 # imagens deste README (não vão para o ar)
 ```
 
 ## Como rodar localmente
 
-Não tem build nem dependências. Basta clonar e abrir o `index.html` no navegador (ou usar a extensão Live Server do VS Code):
+Não tem build nem dependências. Basta clonar e abrir o `site/index.html` no navegador (ou usar a extensão Live Server do VS Code):
 
 ```bash
 git clone https://github.com/joao-marcos-tech/nextech-site.git

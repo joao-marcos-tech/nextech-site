@@ -1,0 +1,3 @@
+# Só a pasta site/ vai para o ar. README, docs/ e arquivos do repo ficam fora.
+[build]
+  publish = "site"
