@@ -319,6 +319,25 @@ nav {
   border-radius: 10px;
   padding: 1.8rem;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.projeto-card .btn {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.projeto-card ul + .btn {
+  margin-top: 1.2rem;
+}
+
+.projeto-selo {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  color: var(--dourado);
 }
 
 .projeto-card h3 {
